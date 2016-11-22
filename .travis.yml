@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - '5'
+  - '4'
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./scripts/deploy.sh
+  'on':
+    branch: master
+    node: '5'
+env:
+  global:
+    - secure: >-
+        ivjoSKFGWysW5CJDZ3YK6DtAEoVJ5JN98w/7Zno89Kj00rQsf8rB3rm1kKAQd30lcpWsFssaSCnu5jlWQwbkUQUD3Dlixgp+heddyujnRIlRBR42KPfil9MWgR0nnZmIyycmESYQUuI1cKZ3ZouQPFtKy8oxwO6fP246UQQ4QJs5IWdTtdzcC31MwpjJOOOAQBtVO1QbkatX8xcfYrohBbk8kDi7rxk0J6n0t4iDGzHnSorFl9kSBOvhSd9IJEHf6oBhG7l1uRBaVSw7QIkT8ijft75dW1quWTaporlpU+hC5feBIA80DgoxwrgocRrIfLF48XEMEUu3xS0Zh5Jo/m2Btp9MKIhF6QGOKWLhF80YRx0j8vhTNTVIJwc5ujuecYy230K/RgG/HKQeN6cVhvJLc7Rx3OBibiZ2JmPRM+kROZ+GvMAMcSZ/ANNX4t5g6nvW61Vl38h3tyx8tVyX+aBNaay9GLyAII4kl8bIjEfq7NWIegSJjgwfu29JtD1+fJc07ukGFQCiRavYxoyGWy+KoUBb0WQmNOZ4h9qUMwRePmz1xtUUP7M5l5qn+G/4zXW1XmD+e94wdeJLgyD/XY/8mVHpq3a2uZnA0fncJ164JnBeCcq0bQFSX0vkRWiGRNHK/tOWe0fjmhLtEz1TsUAQes+Hy1HWO+j5IxbqlGk=
+    - GIT_DEPLOY_REPO=https://7b479c035459397b2eef68bdbdfe3988e34e2567@github.com/owenhoskins/phenomic-deploy.git
