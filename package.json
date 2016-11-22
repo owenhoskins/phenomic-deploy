@@ -131,6 +131,6 @@
     "warning": "^3.0.0",
     "webpack": "^1.11.0",
     "whatwg-fetch": "^0.11.0",
-    "phenomic": "^0.19.1"
+    "phenomic": "0.19.1"
   }
 }
