@@ -3,7 +3,7 @@
   "name": "phenomic-deploy",
   "homepage": "https://phenomic.io",
   "twitter": "",
-  "repository": "git@github.com:owenhoskins/phenomic-deploy.git",
+  "repository": "https://github.com/owenhoskins/phenomic-deploy.git",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
